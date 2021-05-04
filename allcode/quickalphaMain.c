@@ -3,13 +3,14 @@
 #include <sys/time.h>
 #include<string.h>
 #include "quickalpha.h"
+char list[1000000][101];
 int main() {
     struct  timeval start;
     struct  timeval end;
     unsigned  long diff;
     char word [101];
     int idx=0;
-    char list[1000000][101];
+
     while(scanf("%s",word)!=EOF){
         strcpy(list[idx],word);
         idx++;
